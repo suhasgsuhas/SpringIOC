@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+  
+  
+  <bean id="virat" class="com.ioc.autowiring.Customer" autowire="byName">
+  <property name="id" value="18"></property>
+  <property name="name" value="tom"></property>
+   <property name="email" value="abcdser@gamil.com"></property>
+ 
+    
+  </bean>
+
+<bean id="home" class="com.ioc.autowiring.Address">
+<constructor-arg value="560086" index="1"></constructor-arg>
+<constructor-arg value="Bengaluru" index="0"></constructor-arg>
+
+</bean>
+
+<bean id="work" class="com.ioc.autowiring.Address">
+<constructor-arg value="560086" index="1"></constructor-arg>
+<constructor-arg value="mysore" index="0"></constructor-arg>
+
+</bean>
+
+
+</beans>
